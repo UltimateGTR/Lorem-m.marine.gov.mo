@@ -1,0 +1,299 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>
+	海事及水務局-澳門海上航班
+</title><meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta content="width=device-width, initial-scale=1.0" name="viewport" /><meta content="Seaway Scheduled" name="description" /><meta content="Dilly Ho" name="author" /><link rel="shortcut icon" type="image/x-icon" href="favicon.ico" /><link type="text/css" href="Styles/css/bootstrap.min.css" rel="stylesheet" /><link type="text/css" href="Styles/css/docs.min.css" rel="stylesheet" /><link type="text/css" href="Styles/css/bootstrap-datepicker3.min.css" rel="stylesheet" /><link type="text/css" href="Styles/css/jquery.scrollbar.min.css" rel="stylesheet" /><link type="text/css" href="Styles/css/main.css" rel="stylesheet" />
+
+    <script type="text/javascript" src="../SeawayScheduled/Scripts/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../SeawayScheduled/Scripts/jquery.query-object.min.js"></script>
+    <script type="text/javascript" src="../SeawayScheduled/Scripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../SeawayScheduled/Scripts/bootstrap-datepicker.min.js"></script>
+    <script type="text/javascript" src="../SeawayScheduled/Scripts/jquery.blockUI.min.js"></script>
+    <script type="text/javascript" src="../SeawayScheduled/Scripts/jquery.history.min.js"></script>
+    <script type="text/javascript" src="../SeawayScheduled/Scripts/jquery.scrollbar.min.js"></script>
+    <script type="text/javascript" src="../SeawayScheduled/Scripts/jquery.seaway.js"></script>
+    <!--[if lt IE 9]>
+        <script type="text/javascript" src="/SeawayScheduled/Scripts/html5shiv.min.js"></script>
+        <script type="text/javascript" src="/SeawayScheduled/Scripts/respond.min.js"></script>
+    <![endif]-->  
+</head>
+<body>
+    <form method="post" action="DataSchedule.aspx.html" id="_form">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTUxMTczNzAzNA9kFgJmD2QWAgIDD2QWCAIDDw8WAh4ISW1hZ2VVcmwFLS9TZWF3YXlTY2hlZHVsZWQvU3R5bGVzL2ltYWdlcy9oZWFkZXJfQ0hOLmpwZ2RkAg0PFgIeB1Zpc2libGVoZAIvDw8WAh4EVGV4dGVkZAI1D2QWAgIFDxAPFgYeDURhdGFUZXh0RmllbGQFBG5hbWUeDkRhdGFWYWx1ZUZpZWxkBQRhYmJyHgtfIURhdGFCb3VuZGdkEBUJCeiri+mBuOaThwzmvrPploDlpJbmuK8M5r6z6ZaA5rC55LuUDOmmmea4r+S4iueSsAzpppnmuK/kuZ3pvo0M6aaZ5riv5qmf5aC0DOmmmea4r+Wxr+mWgAzmt7HlnLPom4flj6MM5rex5Zyz56aP5rC4FQkAAlBFAlRQAkhLAktXAkFQAlRNAlNLAlNaFCsDCWdnZ2dnZ2dnZ2RkZJ/72OLIFSMF0GvrNaLawqPFJvNi/TvnnieKrFL/avNc" />
+
+
+<script src="../SeawayScheduled/ScriptResource.axd%3Fd=bIYG4Yjx7tX2S952P1jjJjLiD-REvgCdruS1TQfSrvE9X13xBX4ASHsXRZvz6AV0sgOs8_PoOrXmRujrDBS2yJBuqAFDy-vKMcpqKR97gqW0PxfLWxOOTTuyG6CmXoGHyFgfGxHeZYzEcnx7FidwFntCVfXwbaZQX74t4WYpKD81&amp;t=ffffffff940d030f" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+var PageMethods = function() {
+PageMethods.initializeBase(this);
+this._timeout = 0;
+this._userContext = null;
+this._succeeded = null;
+this._failed = null;
+}
+PageMethods.prototype = {
+_get_path:function() {
+ var p = this.get_path();
+ if (p) return p;
+ else return PageMethods._staticInstance.get_path();},
+GetWeather:function(succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'GetWeather',false,{},succeededCallback,failedCallback,userContext); },
+GetRouteData:function(source,destination,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'GetRouteData',false,{source:source,destination:destination},succeededCallback,failedCallback,userContext); },
+Read:function(source,destination,company,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'Read',false,{source:source,destination:destination,company:company},succeededCallback,failedCallback,userContext); }}
+PageMethods.registerClass('PageMethods',Sys.Net.WebServiceProxy);
+PageMethods._staticInstance = new PageMethods();
+PageMethods.set_path = function(value) { PageMethods._staticInstance.set_path(value); }
+PageMethods.get_path = function() { return PageMethods._staticInstance.get_path(); }
+PageMethods.set_timeout = function(value) { PageMethods._staticInstance.set_timeout(value); }
+PageMethods.get_timeout = function() { return PageMethods._staticInstance.get_timeout(); }
+PageMethods.set_defaultUserContext = function(value) { PageMethods._staticInstance.set_defaultUserContext(value); }
+PageMethods.get_defaultUserContext = function() { return PageMethods._staticInstance.get_defaultUserContext(); }
+PageMethods.set_defaultSucceededCallback = function(value) { PageMethods._staticInstance.set_defaultSucceededCallback(value); }
+PageMethods.get_defaultSucceededCallback = function() { return PageMethods._staticInstance.get_defaultSucceededCallback(); }
+PageMethods.set_defaultFailedCallback = function(value) { PageMethods._staticInstance.set_defaultFailedCallback(value); }
+PageMethods.get_defaultFailedCallback = function() { return PageMethods._staticInstance.get_defaultFailedCallback(); }
+PageMethods.set_enableJsonp = function(value) { PageMethods._staticInstance.set_enableJsonp(value); }
+PageMethods.get_enableJsonp = function() { return PageMethods._staticInstance.get_enableJsonp(); }
+PageMethods.set_jsonpCallbackParameter = function(value) { PageMethods._staticInstance.set_jsonpCallbackParameter(value); }
+PageMethods.get_jsonpCallbackParameter = function() { return PageMethods._staticInstance.get_jsonpCallbackParameter(); }
+PageMethods.set_path("DataSchedule.aspx");
+PageMethods.GetWeather= function(onSuccess,onFailed,userContext) {PageMethods._staticInstance.GetWeather(onSuccess,onFailed,userContext); }
+PageMethods.GetRouteData= function(source,destination,onSuccess,onFailed,userContext) {PageMethods._staticInstance.GetRouteData(source,destination,onSuccess,onFailed,userContext); }
+PageMethods.Read= function(source,destination,company,onSuccess,onFailed,userContext) {PageMethods._staticInstance.Read(source,destination,company,onSuccess,onFailed,userContext); }
+//]]>
+</script>
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWCgKt2a3IAQKO5b7sCQL+iqicBQLiitScBQLmioCcBQLrivCcBQLRitScBQLiioicBQLjioCcBQLjirydBUeJJRk42BSFTM+R2BregLhJzkN/kOEbZEw1iizBlRTC" />
+        
+
+        <div class="header">
+            <a href="http://www.marine.gov.mo">
+                <img id="headerImg" src="../SeawayScheduled/Styles/images/header_CHN.jpg" />
+            </a>
+
+            <div id="id_weather"></div>
+
+            <div id="id_lang">
+                <span class="active" data-value="CHN">繁</span> |
+                <span data-value="SC">简</span> |
+                <span data-value="PRT">Português</span> |
+                <span data-value="ENG">English</span>
+            </div>
+        </div>
+
+        <div class="navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="DataSchedule.aspx.html#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <span>實時航班</span><span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="RealTimeSailing.aspx%3Ftype=dataArrivalXML&amp;local=PE.html">往澳航班</a></li>
+                            <li><a href="RealTimeSailing.aspx%3Ftype=dataDepartureXML&amp;local=PE.html">離澳航班</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="DataSchedule.aspx.html">航班表查詢</a></li>
+
+                    
+
+                    <li class="dropdown">
+                        <a href="DataSchedule.aspx.html#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <span>海上交通實況</span><span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="RealTimeTraffic.aspx%3Ffolder=PE-01.html">外港碼頭港池 (東)</a></li>
+                            <li><a href="RealTimeTraffic.aspx%3Ffolder=PE-02.html">外港碼頭港池 (南)</a></li>
+                            <li><a href="RealTimeTraffic.aspx%3Ffolder=PI-01.html">內港航道 (北)</a></li>
+                            <li><a href="RealTimeTraffic.aspx%3Ffolder=PI-02.html">內港航道 (南)</a></li>
+                            <li><a href="RealTimeTraffic.aspx%3Ffolder=TP-01.html">氹仔碼頭港池</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="DataSchedule.aspx.html#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <span>碼頭商店及服務</span><span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="ShopService.aspx%3Flocal=PE.html">澳門外港</a></li>
+                            <li><a href="ShopService.aspx%3Flocal=PI.html">澳門內港</a></li>
+                            <li><a href="ShopService.aspx%3Flocal=TP.html">澳門氹仔</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="DataSchedule.aspx.html#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <span>潮汐圖</span><span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="Tide/PredictedActual.aspx.html">預測及實際潮高</a></li>
+                            <li><a href="Tide/TideSearch.aspx.html">查詢預測潮高</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="DataSchedule.aspx.html#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <span>了解更多</span><span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="About/Introduce.aspx.html">『澳門海上航班』</a></li>
+                            <li><a href="About/Disclaimer.aspx.html">免責聲明</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="content">
+            <marquee behavior="scroll" direction="left" scrolldelay="160">
+                <span id="noticeField"></span>
+            </marquee>
+
+            <div id="id_group">
+                <div class="left-group list-group">
+                    <label>
+                        <span class="glyphicon glyphicon-pushpin"></span>
+                        
+                    </label>
+                    
+                </div>
+
+                <div class="right-group">
+                    
+    <div class="form-inline">
+        <label>航班表查詢：</label>
+
+        <div class="input-group">
+            <span class="input-group-addon">出發地</span>
+            <select name="ctl00$MainContentPlaceHolder$id_sourceDDL" id="id_sourceDDL" class="form-control">
+	<option value="">請選擇</option>
+	<option value="PE">澳門外港</option>
+	<option value="TP">澳門氹仔</option>
+	<option value="HK">香港上環</option>
+	<option value="KW">香港九龍</option>
+	<option value="AP">香港機場</option>
+	<option value="TM">香港屯門</option>
+	<option value="SK">深圳蛇口</option>
+	<option value="SZ">深圳福永</option>
+
+</select>
+        </div>
+
+        <div class="input-group">
+            <span class="input-group-addon">目的地</span>
+            <select id="id_destDDL" class="form-control"></select>
+        </div>
+
+        <div class="input-group">
+            <span class="input-group-addon">船務公司</span>
+            <select id="id_companyDDL" class="form-control"></select>
+        </div>
+
+        <span id="id_search_btn" class="btn btn-primary">
+            查 詢
+        </span>
+    </div>
+
+    <table id="id_dsTb" class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th class="table-border-radius-l">航 班</th>
+                <th class="table-border-radius-r">公司／機構</th>
+            </tr>
+        </thead>
+
+        <tbody></tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="2" class="text-center">
+                    <span class="label label-info">航班資料只供參考，以船公司公佈作準</span>
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <script type="text/javascript">
+        $(function () {
+            $('.left-group').toggle(false);
+
+            $("body").on("change", "#id_sourceDDL", function (e) {
+                var $source = $(this).val();
+                PageMethods.GetRouteData($source, null, OnSResult);
+            });
+
+            $("body").on("change", "#id_destDDL", function (e) {
+                var $source = $("#id_sourceDDL").val();
+                var $destination = $(this).val();
+                PageMethods.GetRouteData($source, $destination, OnCResult);
+            });
+
+            $("body").on("click", "#id_search_btn", function (e) {
+                var $source = $("#id_sourceDDL").val();
+                var $destination = $('#id_destDDL').val();
+                var $company = $('#id_companyDDL').val();
+
+                if ($destination != null) {
+                    $.fn.blockUI();
+
+                    $company = ($company == 'All') ? null : $company;
+
+                    PageMethods.Read($source, $destination, $company, OnResult);
+                }
+            });
+        });
+
+        function OnSResult(data) {
+            $('#id_destDDL').empty();
+
+            $.each(data, function (index, value) {
+                var $option = $("#id_sourceDDL option[value='" + value + "']").clone();
+                $('#id_destDDL').append($option);
+            });
+
+            var $source = $("#id_sourceDDL").val();
+            var $destination = $('#id_destDDL').val();
+            PageMethods.GetRouteData($source, $destination, OnCResult);
+        }
+
+        function OnCResult(data) {
+            $('#id_companyDDL').empty();
+
+            $.each(data, function (index, value) {
+                $('#id_companyDDL').append($('<option>', {
+                    value: value,
+                    text: value
+                }));
+            });
+        }
+
+        function OnResult(data) {
+            $.unblockUI();
+            $('tbody').empty();
+            $('tbody').html(data);           
+        }
+    </script>
+
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <script type="text/javascript">
+        $(function () {
+            PageMethods.GetWeather(OnWeatherResult);
+
+            function OnWeatherResult(data) {
+                $('#id_weather').html(data);
+            }
+        });
+    </script>
+</body>
+</html>

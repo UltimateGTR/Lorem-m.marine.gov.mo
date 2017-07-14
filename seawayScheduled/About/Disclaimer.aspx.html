@@ -1,0 +1,223 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>
+	海事及水務局-澳門海上航班
+</title><meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta content="width=device-width, initial-scale=1.0" name="viewport" /><meta content="Seaway Scheduled" name="description" /><meta content="Dilly Ho" name="author" /><link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" /><link type="text/css" href="../Styles/css/bootstrap.min.css" rel="stylesheet" /><link type="text/css" href="../Styles/css/docs.min.css" rel="stylesheet" /><link type="text/css" href="../Styles/css/bootstrap-datepicker3.min.css" rel="stylesheet" /><link type="text/css" href="../Styles/css/jquery.scrollbar.min.css" rel="stylesheet" /><link type="text/css" href="../Styles/css/main.css" rel="stylesheet" />
+
+    <script type="text/javascript" src="../../SeawayScheduled/Scripts/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../../SeawayScheduled/Scripts/jquery.query-object.min.js"></script>
+    <script type="text/javascript" src="../../SeawayScheduled/Scripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../SeawayScheduled/Scripts/bootstrap-datepicker.min.js"></script>
+    <script type="text/javascript" src="../../SeawayScheduled/Scripts/jquery.blockUI.min.js"></script>
+    <script type="text/javascript" src="../../SeawayScheduled/Scripts/jquery.history.min.js"></script>
+    <script type="text/javascript" src="../../SeawayScheduled/Scripts/jquery.scrollbar.min.js"></script>
+    <script type="text/javascript" src="../../SeawayScheduled/Scripts/jquery.seaway.js"></script>
+    <!--[if lt IE 9]>
+        <script type="text/javascript" src="/SeawayScheduled/Scripts/html5shiv.min.js"></script>
+        <script type="text/javascript" src="/SeawayScheduled/Scripts/respond.min.js"></script>
+    <![endif]-->  
+</head>
+<body>
+    <form method="post" action="Disclaimer.aspx.html" id="_form">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTIwNjYyMTUwMA9kFgJmD2QWAgIDD2QWBgIDDw8WAh4ISW1hZ2VVcmwFLS9TZWF3YXlTY2hlZHVsZWQvU3R5bGVzL2ltYWdlcy9oZWFkZXJfQ0hOLmpwZ2RkAg0PFgIeB1Zpc2libGVoZAIvDw8WAh4EVGV4dGVkZGRDjLcPI8ncACyfHkBWhNWZQBi5QhoXzhPOyJ6xlzK3ZA==" />
+
+
+<script src="../../SeawayScheduled/ScriptResource.axd%3Fd=bIYG4Yjx7tX2S952P1jjJjLiD-REvgCdruS1TQfSrvE9X13xBX4ASHsXRZvz6AV0sgOs8_PoOrXmRujrDBS2yJBuqAFDy-vKMcpqKR97gqW0PxfLWxOOTTuyG6CmXoGHyFgfGxHeZYzEcnx7FidwFntCVfXwbaZQX74t4WYpKD81&amp;t=ffffffff940d030f" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+var PageMethods = function() {
+PageMethods.initializeBase(this);
+this._timeout = 0;
+this._userContext = null;
+this._succeeded = null;
+this._failed = null;
+}
+PageMethods.prototype = {
+_get_path:function() {
+ var p = this.get_path();
+ if (p) return p;
+ else return PageMethods._staticInstance.get_path();},
+GetWeather:function(succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'GetWeather',false,{},succeededCallback,failedCallback,userContext); }}
+PageMethods.registerClass('PageMethods',Sys.Net.WebServiceProxy);
+PageMethods._staticInstance = new PageMethods();
+PageMethods.set_path = function(value) { PageMethods._staticInstance.set_path(value); }
+PageMethods.get_path = function() { return PageMethods._staticInstance.get_path(); }
+PageMethods.set_timeout = function(value) { PageMethods._staticInstance.set_timeout(value); }
+PageMethods.get_timeout = function() { return PageMethods._staticInstance.get_timeout(); }
+PageMethods.set_defaultUserContext = function(value) { PageMethods._staticInstance.set_defaultUserContext(value); }
+PageMethods.get_defaultUserContext = function() { return PageMethods._staticInstance.get_defaultUserContext(); }
+PageMethods.set_defaultSucceededCallback = function(value) { PageMethods._staticInstance.set_defaultSucceededCallback(value); }
+PageMethods.get_defaultSucceededCallback = function() { return PageMethods._staticInstance.get_defaultSucceededCallback(); }
+PageMethods.set_defaultFailedCallback = function(value) { PageMethods._staticInstance.set_defaultFailedCallback(value); }
+PageMethods.get_defaultFailedCallback = function() { return PageMethods._staticInstance.get_defaultFailedCallback(); }
+PageMethods.set_enableJsonp = function(value) { PageMethods._staticInstance.set_enableJsonp(value); }
+PageMethods.get_enableJsonp = function() { return PageMethods._staticInstance.get_enableJsonp(); }
+PageMethods.set_jsonpCallbackParameter = function(value) { PageMethods._staticInstance.set_jsonpCallbackParameter(value); }
+PageMethods.get_jsonpCallbackParameter = function() { return PageMethods._staticInstance.get_jsonpCallbackParameter(); }
+PageMethods.set_path("Disclaimer.aspx");
+PageMethods.GetWeather= function(onSuccess,onFailed,userContext) {PageMethods._staticInstance.GetWeather(onSuccess,onFailed,userContext); }
+//]]>
+</script>
+
+        
+
+        <div class="header">
+            <a href="http://www.marine.gov.mo">
+                <img id="headerImg" src="../../SeawayScheduled/Styles/images/header_CHN.jpg" />
+            </a>
+
+            <div id="id_weather"></div>
+
+            <div id="id_lang">
+                <span class="active" data-value="CHN">繁</span> |
+                <span data-value="SC">简</span> |
+                <span data-value="PRT">Português</span> |
+                <span data-value="ENG">English</span>
+            </div>
+        </div>
+
+        <div class="navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="Disclaimer.aspx.html#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <span>實時航班</span><span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../RealTimeSailing.aspx%3Ftype=dataArrivalXML&amp;local=PE.html">往澳航班</a></li>
+                            <li><a href="../RealTimeSailing.aspx%3Ftype=dataDepartureXML&amp;local=PE.html">離澳航班</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="../DataSchedule.aspx.html">航班表查詢</a></li>
+
+                    
+
+                    <li class="dropdown">
+                        <a href="Disclaimer.aspx.html#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <span>海上交通實況</span><span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../RealTimeTraffic.aspx%3Ffolder=PE-01.html">外港碼頭港池 (東)</a></li>
+                            <li><a href="../RealTimeTraffic.aspx%3Ffolder=PE-02.html">外港碼頭港池 (南)</a></li>
+                            <li><a href="../RealTimeTraffic.aspx%3Ffolder=PI-01.html">內港航道 (北)</a></li>
+                            <li><a href="../RealTimeTraffic.aspx%3Ffolder=PI-02.html">內港航道 (南)</a></li>
+                            <li><a href="../RealTimeTraffic.aspx%3Ffolder=TP-01.html">氹仔碼頭港池</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="Disclaimer.aspx.html#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <span>碼頭商店及服務</span><span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../ShopService.aspx%3Flocal=PE.html">澳門外港</a></li>
+                            <li><a href="../ShopService.aspx%3Flocal=PI.html">澳門內港</a></li>
+                            <li><a href="../ShopService.aspx%3Flocal=TP.html">澳門氹仔</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="Disclaimer.aspx.html#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <span>潮汐圖</span><span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../Tide/PredictedActual.aspx.html">預測及實際潮高</a></li>
+                            <li><a href="../Tide/TideSearch.aspx.html">查詢預測潮高</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="Disclaimer.aspx.html#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <span>了解更多</span><span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="Introduce.aspx.html">『澳門海上航班』</a></li>
+                            <li><a href="Disclaimer.aspx.html">免責聲明</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="content">
+            <marquee behavior="scroll" direction="left" scrolldelay="160">
+                <span id="noticeField"></span>
+            </marquee>
+
+            <div id="id_group">
+                <div class="left-group list-group">
+                    <label>
+                        <span class="glyphicon glyphicon-pushpin"></span>
+                        
+    <span>了解更多</span>
+
+                    </label>
+                    
+    <a class="list-group-item" href="Introduce.aspx.html">『澳門海上航班』</a>
+    <a class="list-group-item active">免責聲明</a>
+
+                </div>
+
+                <div class="right-group">
+                    
+    <div id="id_about" class="right-content">
+        <blockquote>
+    <h3>『澳門海上航班』使用條款及免責聲明</h3>
+</blockquote>
+<p>「澳門海上航班」網頁（以下簡稱本程式／本網站）由澳門特別行政區政府（以下簡稱特區政府）建立。所有內容（包括文字、圖片、聲音、影像）以及程式的版權屬特區政府全權所有，並受特區政府有關法例以及有關版權的國際條約所保護。</p>
+<p>特區政府載於本程式／本網站的資料，只作一般性質及說明用途。對該等資料，特區政府不會就任何錯誤、遺漏、或錯誤陳述或失實陳述（不論明示或默示的）承擔任何責任。</p>
+<p>對任何因使用或不當使用或依據本程式／本網站所載的資料而引致或所涉及的損失、毀壞或損害（包括但不限於相應而生的損失、毀壞或損害），特區政府概不承擔任何義務、責任或法律責任。對於任何因使用或不當使用或依據本程式／本網站所提供的電子服務而引致或所涉及的損失、毀壞或損害（包括但不限於相應而生的損失、損毀或損害），特區政府概不承擔任何義務、責任或法律責任。</p>
+<p>為方便使用者查閱由其他人士／團體或通過其他人士／團體提供的資訊，本程式／本網站可能會提供或協助提供超連結至外界網站。提供或協助提供該等超連結，並不構成特區政府贊同或不贊同該等網站之內容作出任何明示或暗示的聲明、陳述或保證；對任何因使用或不當使用或依據通過本程式／本網站傳遞或提供的外界網站的內容而引致或所涉及的損失、毀壞或損害（包括但不限於相應而生的損失、毀壞或損害），特區政府概不承擔任何義務、責任或法律責任。</p>
+<p>此免責條款如中、英、葡文版本有任何抵觸或不相符之處，應以中、葡文版本為準，英文版本只作參考用途。</p>
+<p>當閣下一旦使用「澳門海上航班」服務，即表示你無條件接受上述所載的免責條款及任何特區政府不時在無須預先通知閣下的情況下，對上述條款所作出的修改及／或修訂。請定期瀏覽此網頁查閱任何修改及／修訂。</p>
+<p>若本使用條款有任何更新，我們會用新版本取代舊版本發佈，並在文件中列明更新修訂日期，但不作另行公佈。</p>
+
+<blockquote>
+    <h3>私隱條款</h3>
+</blockquote>
+<b>所收集的信息</b>
+<p>當閣下使用「澳門海上航班」服務，我們所用的電腦系統有可能會自動記錄以下的技術資料：閣下所在的互聯網域名、IP 地址及相關路由資料；閣下使用服務的日期及時間；閣下使用服務時所瀏覽的網頁。收集這些信息的目的是用來進行統計分析，以便為閣下提供更好的服務。除非發現該等使用者對「澳門海上航班」進行敵意攻擊，否則不會通過這些資料去追查使用者。</p>
+<p>當閣下瀏覽本程式／本網站或由本程式／本網站下載資料，我們所用的電腦系統有可能會自動記錄以下的技術資料：閣下所在的互聯網域名及 IP 地址；閣下開始瀏覽的日期及時間；閣下所瀏覽的網頁。收集這些信息的目的是用來進行統計分析，以便為閣下提供更切合您的需要的資料。除非發現該等訪問對本程式／本網站進行敵意攻擊，否則不會通過這些資料去追查瀏覽者。</p>
+
+<b>Cookies</b>
+<p>在使用本程式／本網站的電子服務時，所執行的軟件有可能會使用“Cookies”技術記錄使用者的使用情況，主要用於下次閣下再光臨時按閣下的使用習慣運行。大多數瀏覽器最初設定為接受Cookies，但閣下可以重新設置瀏覽器拒絕所有Cookies。不過，如果閣下的Cookies被禁用，本程式／本網站的一些電子服務可能無法正常運行。</p>
+
+<b>提供信息予第三方</b>
+<p>在以下情況下，我們有可能分享閣下被電腦系統所收集的資料予第三方：</p>
+<ol>
+<li>阻止或防止當前或潛在對本電腦系統的敵意攻擊；</li>
+<li>遵守法庭命令或其他法律程序；</li>
+<li>涉及國家緊急情況或安全考慮。</li>
+</ol>
+
+<b>收集信息的保護</b>
+<p>作為「澳門海上航班」服務及本程式／本網站的協調及維護部門，海事及水務局（以下簡稱本局）保證本局工作人員及服務外判商的工作人員均遵守所有的相關規定，閣下的個人資料處理會受到保密措施規範，並得到妥善保存。個人資料會保存直至該等資料無須再用於收集時所作的用途，或到政府規定的保存期限，屆時這些資料將按有關規定銷毀。</p>
+
+<b>對外連結</b>
+<p>本程式／本網站有內容外連到其他網站，例如本澳政府部門，外地的政府或公共機構、本地或外地的私人機構。按下這些連結去到其他網站時，表示閣下已經離開本程式／本網站。這些網站的私隱條款很可能有別於本程式／本網站，我們對這些網站之內容及其私隱條款不負任何責任，因此建議閣下有需要時先了解這些網站的私隱條款。</p>
+
+<b>本條款的改變</b>
+<p>若本條款有任何更新，我們會用新版本取代舊版本發佈，並在文件中列明更新修訂日期，但不作另行公佈。本私隱條款如中、英、葡文版本有任何抵觸或不相符之處，應以中、葡文版本為準，英文版本只作參考用途。</p>
+    </div>
+
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <script type="text/javascript">
+        $(function () {
+            PageMethods.GetWeather(OnWeatherResult);
+
+            function OnWeatherResult(data) {
+                $('#id_weather').html(data);
+            }
+        });
+    </script>
+</body>
+</html>

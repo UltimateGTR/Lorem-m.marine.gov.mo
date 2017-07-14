@@ -1,0 +1,242 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>
+	海事及水務局-澳門海上航班
+</title><meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta content="width=device-width, initial-scale=1.0" name="viewport" /><meta content="Seaway Scheduled" name="description" /><meta content="Dilly Ho" name="author" /><link rel="shortcut icon" type="image/x-icon" href="favicon.ico" /><link type="text/css" href="Styles/css/bootstrap.min.css" rel="stylesheet" /><link type="text/css" href="Styles/css/docs.min.css" rel="stylesheet" /><link type="text/css" href="Styles/css/bootstrap-datepicker3.min.css" rel="stylesheet" /><link type="text/css" href="Styles/css/jquery.scrollbar.min.css" rel="stylesheet" /><link type="text/css" href="Styles/css/main.css" rel="stylesheet" />
+
+    <script type="text/javascript" src="../SeawayScheduled/Scripts/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../SeawayScheduled/Scripts/jquery.query-object.min.js"></script>
+    <script type="text/javascript" src="../SeawayScheduled/Scripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../SeawayScheduled/Scripts/bootstrap-datepicker.min.js"></script>
+    <script type="text/javascript" src="../SeawayScheduled/Scripts/jquery.blockUI.min.js"></script>
+    <script type="text/javascript" src="../SeawayScheduled/Scripts/jquery.history.min.js"></script>
+    <script type="text/javascript" src="../SeawayScheduled/Scripts/jquery.scrollbar.min.js"></script>
+    <script type="text/javascript" src="../SeawayScheduled/Scripts/jquery.seaway.js"></script>
+    <!--[if lt IE 9]>
+        <script type="text/javascript" src="/SeawayScheduled/Scripts/html5shiv.min.js"></script>
+        <script type="text/javascript" src="/SeawayScheduled/Scripts/respond.min.js"></script>
+    <![endif]-->  
+</head>
+<body>
+    <form method="post" action="RealTimeTraffic.aspx%3Ffolder=PE-01.html" id="_form">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTg4NjQ0NzA1Mw9kFgJmD2QWAgIDD2QWBgIDDw8WAh4ISW1hZ2VVcmwFLS9TZWF3YXlTY2hlZHVsZWQvU3R5bGVzL2ltYWdlcy9oZWFkZXJfQ0hOLmpwZ2RkAg0PFgIeB1Zpc2libGVoZAIvDw8WAh4EVGV4dGVkZGQZP+qRBqxDIOmF2/schlRm86zIji8JwpbYt/bdjpaOmg==" />
+
+
+<script src="../SeawayScheduled/ScriptResource.axd%3Fd=bIYG4Yjx7tX2S952P1jjJjLiD-REvgCdruS1TQfSrvE9X13xBX4ASHsXRZvz6AV0sgOs8_PoOrXmRujrDBS2yJBuqAFDy-vKMcpqKR97gqW0PxfLWxOOTTuyG6CmXoGHyFgfGxHeZYzEcnx7FidwFntCVfXwbaZQX74t4WYpKD81&amp;t=ffffffff940d030f" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+var PageMethods = function() {
+PageMethods.initializeBase(this);
+this._timeout = 0;
+this._userContext = null;
+this._succeeded = null;
+this._failed = null;
+}
+PageMethods.prototype = {
+_get_path:function() {
+ var p = this.get_path();
+ if (p) return p;
+ else return PageMethods._staticInstance.get_path();},
+GetWeather:function(succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'GetWeather',false,{},succeededCallback,failedCallback,userContext); },
+GetInfo:function(folder,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'GetInfo',false,{folder:folder},succeededCallback,failedCallback,userContext); }}
+PageMethods.registerClass('PageMethods',Sys.Net.WebServiceProxy);
+PageMethods._staticInstance = new PageMethods();
+PageMethods.set_path = function(value) { PageMethods._staticInstance.set_path(value); }
+PageMethods.get_path = function() { return PageMethods._staticInstance.get_path(); }
+PageMethods.set_timeout = function(value) { PageMethods._staticInstance.set_timeout(value); }
+PageMethods.get_timeout = function() { return PageMethods._staticInstance.get_timeout(); }
+PageMethods.set_defaultUserContext = function(value) { PageMethods._staticInstance.set_defaultUserContext(value); }
+PageMethods.get_defaultUserContext = function() { return PageMethods._staticInstance.get_defaultUserContext(); }
+PageMethods.set_defaultSucceededCallback = function(value) { PageMethods._staticInstance.set_defaultSucceededCallback(value); }
+PageMethods.get_defaultSucceededCallback = function() { return PageMethods._staticInstance.get_defaultSucceededCallback(); }
+PageMethods.set_defaultFailedCallback = function(value) { PageMethods._staticInstance.set_defaultFailedCallback(value); }
+PageMethods.get_defaultFailedCallback = function() { return PageMethods._staticInstance.get_defaultFailedCallback(); }
+PageMethods.set_enableJsonp = function(value) { PageMethods._staticInstance.set_enableJsonp(value); }
+PageMethods.get_enableJsonp = function() { return PageMethods._staticInstance.get_enableJsonp(); }
+PageMethods.set_jsonpCallbackParameter = function(value) { PageMethods._staticInstance.set_jsonpCallbackParameter(value); }
+PageMethods.get_jsonpCallbackParameter = function() { return PageMethods._staticInstance.get_jsonpCallbackParameter(); }
+PageMethods.set_path("RealTimeTraffic.aspx");
+PageMethods.GetWeather= function(onSuccess,onFailed,userContext) {PageMethods._staticInstance.GetWeather(onSuccess,onFailed,userContext); }
+PageMethods.GetInfo= function(folder,onSuccess,onFailed,userContext) {PageMethods._staticInstance.GetInfo(folder,onSuccess,onFailed,userContext); }
+//]]>
+</script>
+
+        
+
+        <div class="header">
+            <a href="http://www.marine.gov.mo">
+                <img id="headerImg" src="../SeawayScheduled/Styles/images/header_CHN.jpg" />
+            </a>
+
+            <div id="id_weather"></div>
+
+            <div id="id_lang">
+                <span class="active" data-value="CHN">繁</span> |
+                <span data-value="SC">简</span> |
+                <span data-value="PRT">Português</span> |
+                <span data-value="ENG">English</span>
+            </div>
+        </div>
+
+        <div class="navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="RealTimeTraffic.aspx%3Ffolder=PE-01.html#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <span>實時航班</span><span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="RealTimeSailing.aspx%3Ftype=dataArrivalXML&amp;local=PE.html">往澳航班</a></li>
+                            <li><a href="RealTimeSailing.aspx%3Ftype=dataDepartureXML&amp;local=PE.html">離澳航班</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="DataSchedule.aspx.html">航班表查詢</a></li>
+
+                    
+
+                    <li class="dropdown">
+                        <a href="RealTimeTraffic.aspx%3Ffolder=PE-01.html#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <span>海上交通實況</span><span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="RealTimeTraffic.aspx%3Ffolder=PE-01.html">外港碼頭港池 (東)</a></li>
+                            <li><a href="RealTimeTraffic.aspx%3Ffolder=PE-02.html">外港碼頭港池 (南)</a></li>
+                            <li><a href="RealTimeTraffic.aspx%3Ffolder=PI-01.html">內港航道 (北)</a></li>
+                            <li><a href="RealTimeTraffic.aspx%3Ffolder=PI-02.html">內港航道 (南)</a></li>
+                            <li><a href="RealTimeTraffic.aspx%3Ffolder=TP-01.html">氹仔碼頭港池</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="RealTimeTraffic.aspx%3Ffolder=PE-01.html#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <span>碼頭商店及服務</span><span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="ShopService.aspx%3Flocal=PE.html">澳門外港</a></li>
+                            <li><a href="ShopService.aspx%3Flocal=PI.html">澳門內港</a></li>
+                            <li><a href="ShopService.aspx%3Flocal=TP.html">澳門氹仔</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="RealTimeTraffic.aspx%3Ffolder=PE-01.html#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <span>潮汐圖</span><span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="Tide/PredictedActual.aspx.html">預測及實際潮高</a></li>
+                            <li><a href="Tide/TideSearch.aspx.html">查詢預測潮高</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="RealTimeTraffic.aspx%3Ffolder=PE-01.html#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <span>了解更多</span><span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="About/Introduce.aspx.html">『澳門海上航班』</a></li>
+                            <li><a href="About/Disclaimer.aspx.html">免責聲明</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="content">
+            <marquee behavior="scroll" direction="left" scrolldelay="160">
+                <span id="noticeField"></span>
+            </marquee>
+
+            <div id="id_group">
+                <div class="left-group list-group">
+                    <label>
+                        <span class="glyphicon glyphicon-pushpin"></span>
+                        
+    <span>海上交通實況</span>
+
+                    </label>
+                    
+    <a class="list-group-item" href="RealTimeTraffic.aspx%3Ffolder=PE-01.html">外港碼頭港池 (東)</a>
+    <a class="list-group-item" href="RealTimeTraffic.aspx%3Ffolder=PE-02.html">外港碼頭港池 (南)</a>
+    <a class="list-group-item" href="RealTimeTraffic.aspx%3Ffolder=PI-01.html">內港航道 (北)</a>
+    <a class="list-group-item" href="RealTimeTraffic.aspx%3Ffolder=PI-02.html">內港航道 (南)</a>
+    <a class="list-group-item" href="RealTimeTraffic.aspx%3Ffolder=TP-01.html">氹仔碼頭港池</a>
+
+                </div>
+
+                <div class="right-group">
+                    
+    <div class="right-content">
+        <p class="text-danger text-center">
+            註：影像的更新時間為每10秒一次。
+        </p>
+
+        <div id="id_img"></div>
+    </div>
+
+    <script type="text/javascript">
+        $(function () {
+            var $folder = $.query.get('folder');
+
+            if ($folder == '') {
+                $('.list-group-item:eq(0)').addClass('active');
+            }
+            else {
+                $('.list-group-item').each(function () {
+                    var $href = $(this).attr('href');
+                    if ($href.indexOf($folder) > -1) {
+                        $(this).addClass('active');
+                    }
+                });
+            }
+
+            GetInfo();
+
+            $("body").on("click", ".left-group a", function (e) {
+                e.preventDefault();
+
+                var $url = $(this).attr('href');
+                var $lang = $("#id_lang span.active").attr('data-value');
+                location.href = $url + '&lang=' + $lang;
+            });
+        });
+
+        function GetInfo() {
+            var $folder = $.query.get('folder');
+            if ($folder == '') {
+                $folder = 'PE-01';
+            }
+
+            PageMethods.GetInfo($folder, OnResult);
+        }
+
+        function OnResult(data) {
+            $('#id_img').html(data);
+
+            setTimeout(function () {
+                GetInfo();
+            }, 10000);
+        }
+    </script>
+
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <script type="text/javascript">
+        $(function () {
+            PageMethods.GetWeather(OnWeatherResult);
+
+            function OnWeatherResult(data) {
+                $('#id_weather').html(data);
+            }
+        });
+    </script>
+</body>
+</html>

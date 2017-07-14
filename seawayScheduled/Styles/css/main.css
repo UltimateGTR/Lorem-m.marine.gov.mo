@@ -1,0 +1,463 @@
+﻿body {
+    background-color: rgb(74,81,85);
+    font-family: "Microsoft JhengHei", Tahoma, Verdana, Arial, sans-serif;
+    letter-spacing: 1px;
+}
+
+:focus {
+    outline: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a:focus, .btn.active.focus, .btn.active:focus, .btn.focus, .btn.focus:active, .btn:active:focus, .btn:focus {
+    outline: none;
+}
+
+/* header */
+.header {
+    position: relative;
+    display: block;
+    width: 956px;
+    margin: 1% auto 0;
+}
+
+#id_weather {
+    background-color: #99ff00;
+    border-radius: 4px;
+    font-size: 0.8em;
+    position: absolute;
+    top: 3px;
+    right: 10px;
+    padding: 2px 3px;
+}
+
+    #id_weather label {
+        position: relative;
+        top: 1px;
+        margin: 0 2px;
+    }
+
+    #id_weather img {
+        width: 21px;
+        height: 21px;
+    }
+
+#id_lang {
+    background-color: rgba(102, 204, 255, 0.6);
+    border-radius: 4px;
+    position: absolute;
+    bottom: 3px;
+    right: 10px;
+    padding: 1px 6px;
+}
+
+    #id_lang span {
+        cursor: pointer;
+        display: inline-block;
+    }
+
+        #id_lang span:hover,
+        #id_lang span.active {
+            color: rgb(221, 79, 69);
+        }
+
+/* navbar */
+.navbar {
+    border: none;
+    border-radius: 0;
+    background: url(../images/main-bg.png) repeat;
+    width: 956px;
+    min-height: 39px;
+    margin: 1px auto 2px;
+}
+
+.navbar-nav {
+    margin: 0;
+}
+
+.navbar .navbar-nav > li {
+    display: inline-block;
+    background: url(../images/main-delimiter.png) 98% 4px no-repeat;
+}
+
+    .navbar .navbar-nav > li > a {
+        padding: 10px 12px;
+        color: #fff;
+        letter-spacing: 1px;
+    }
+
+.navbar .navbar-nav li a {
+    background-color: transparent;
+}
+
+    .navbar .navbar-nav li a:hover,
+    .navbar .navbar-nav li a:focus,
+    .open .dropdown-toggle {
+        background-color: transparent;
+        color: #000;
+    }
+
+.open .dropdown-menu li a:hover {
+    background-color: rgba(102, 204, 255, 0.6);
+}
+
+.navbar-collapse {
+    padding-left: 0;
+}
+
+/* content */
+.content {
+    display: table;
+    width: 956px;
+    min-height: 380px;
+    margin: 0 auto;
+    padding: 5px 10px;
+    background-color: #fff;
+}
+
+marquee {
+    font-size: 1.2em;
+}
+
+    marquee .text-danger {
+        color: red;
+    }
+
+    marquee .text-warning {
+        color: orange;
+    }
+
+    marquee .t-notice {
+        display: inline-block;
+        margin-right: 3em;
+    }
+
+#id_group {
+    margin-top: 6px;
+}
+
+#id_notice,
+#id_notice .text-warning {
+    color: red;
+    font-size: 1.3em;
+}
+
+.table, .choose-list {
+    width: 920px;
+    margin: 0 auto;
+}
+
+.choose-list {
+    border: 1px solid #cdcdcd;
+    border-radius: 5px;
+    margin-bottom: 12px;
+}
+
+    .choose-list .label-bar {
+        color: #000;
+        background-color: rgba(102, 204, 255, 0.6);
+        border: 1px solid #ddd;
+    }
+
+    .choose-list label {
+        position: relative;
+        top: 2px;
+        color: darkblue;
+        font-weight: normal;
+        font-size: 1.5em;
+    }
+
+    .choose-list hr {
+        margin: 0 5px 0;
+        border-top: 1px solid #cdcdcd;
+    }
+
+    .choose-list ul {
+        padding: 12px 12px 0;
+    }
+
+        .choose-list ul li,
+        .choose-list ul li b {
+            font-weight: bold;
+            font-size: 1em;
+            letter-spacing: 1px;
+        }
+
+            .choose-list ul li .label {
+                font-size: 1em;
+            }
+
+                .choose-list ul li .label span {
+                    position: relative;
+                    top: 1px;
+                }
+
+            .choose-list ul li b {
+                margin-left: 6px;
+                padding-bottom: 14px;
+            }
+
+                .choose-list ul li b.arrow {
+                    background: url(../images/arrow.png) no-repeat center bottom;
+                }
+
+
+    .choose-list b {
+        cursor: pointer;
+    }
+
+        .choose-list b.active {
+            color: rgb(221, 79, 69);
+        }
+
+.choose-location {
+    font-size: 0.9em;
+    margin: 0 1em 8px;
+    padding: 8px;
+    border: 1px solid rgb(221, 79, 69);
+    border-radius: 5px;
+}
+
+    .choose-location b {
+        margin-right: 15px;
+    }
+
+.tb-content {
+    max-height: 520px;
+    overflow-y: scroll;
+}
+
+.img-rounded {
+    border: 1px solid #eee;
+    width: 100px;
+    height: 25px;
+}
+
+.table-border-radius-l {
+    border-radius: 6px 0 0 0;
+}
+
+.table-border-radius-r {
+    border-radius: 0 6px 0 0;
+}
+
+.table > thead > tr > th,
+.table > tbody > tr > td {
+    vertical-align: middle;
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 0.9em;
+    font-weight: bold;
+    padding: 4px;
+}
+
+.table > thead > tr > th {
+    padding: 8px;
+}
+
+.table > thead > tr {
+    background-color: #085a78;
+    color: #fff;
+}
+
+.table > tfoot > tr > td .label {
+    font-size: 12px;
+    padding: .4em .6em .3em;
+    margin: 2px 0;
+}
+
+#id_table .table {
+    table-layout: fixed;
+}
+
+.left-group {
+    display: table-cell;
+    width: 200px;
+}
+
+    .left-group label {
+        display: block;
+        border-bottom: 1px dotted #222;
+        padding-bottom: 1px;
+    }
+
+        .left-group label .glyphicon {
+            display: table-cell;
+            font-size: 1.5em;
+            color: indianred;
+        }
+
+        .left-group label span:last-child {
+            display: table-cell;
+            position: relative;
+            left: 5px;
+            bottom: 4px;
+        }
+
+.right-group {
+    display: table-cell;
+}
+
+    .right-group blockquote h3 {
+        margin: 0;
+    }
+
+    .right-group blockquote:not(:first-child) {
+        margin-top: 2em;
+    }
+
+.right-content {
+    margin-left: 20px;
+}
+
+#id_img {
+    width: 700px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+    #id_img img {
+        width: 350px;
+        height: 250px;
+    }
+
+#id_about b {
+    display: block;
+    margin-top: 20px;
+}
+
+#id_about p {
+    text-indent: 2em;
+    font-size: 15px;
+}
+
+#id_about ol {
+    padding-left: 3.6em;
+    font-size: 15px;
+}
+
+.t-download {
+    margin-top: 15px;
+}
+
+    .t-download .t-header {
+        padding-bottom: 5px;
+        border-bottom: 1px solid rgb(221, 79, 69);
+        width: 400px;
+    }
+
+        .t-download .t-header img {
+            width: 130px;
+        }
+
+        .t-download .t-header label {
+            position: relative;
+            top: 16px;
+            font-size: 15px;
+        }
+
+    .t-download .t-code {
+        display: inline-block;
+        margin: 5px 5em 0 0;
+    }
+
+        .t-download .t-code a {
+            display: inline-block;
+        }
+
+        .t-download .t-code img {
+            width: 100px;
+            height: 100px;
+        }
+
+        .t-download .t-code a span {
+            display: block;
+            text-align: center;
+        }
+
+.t-download-img img {
+    display: inline-block;
+    border-radius: 2px;
+    margin-top: 5px;
+}
+
+.bs-callout p {
+    letter-spacing: 2px;
+}
+
+#id_dsTb {
+    width: 935px;
+    margin-top: 10px;
+}
+
+#accordion {
+    margin-top: 10px;
+}
+
+    #accordion .panel-heading {
+        border-left: 3px solid #ff6a00;
+    }
+
+    #accordion .panel-body p {
+        cursor: pointer;
+    }
+
+        #accordion .panel-body p:last-child {
+            margin-bottom: 0;
+        }
+
+        #accordion .panel-body p:hover,
+        #id_search li:hover {
+            color: #0094ff;
+        }
+
+        #accordion .panel-body p.active,
+        #id_search li.active {
+            padding: 5px;
+            background-color: cadetBlue;
+            color: #fff;
+        }
+
+#id_search ul {
+    margin-top: 10px;
+    margin-left: -20px;
+    list-style: disc;
+}
+
+    #id_search ul li {
+        cursor: pointer;
+        padding: 2px 0;
+    }
+
+#id_modal .modal-body {
+    height: 300px;
+    overflow: auto;
+}
+
+#id_modal img {
+    width: 300px;
+    height: 250px;
+}
+
+#id_modal table tr:first-child td {
+    border-top: none;
+}
+
+#id_modal table tr td:first-child {
+    width: 110px;
+}
+
+#id_modal table tr td:nth-child(2n) {
+    text-align: left;
+}
+
+/* Only for IE8 or above */
+@media screen\0 {
+    .choose-list ul li b {
+        margin-left: 6px;
+        padding-bottom: 14px;
+    }
+}

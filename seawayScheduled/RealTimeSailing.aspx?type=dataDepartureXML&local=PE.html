@@ -1,0 +1,385 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>
+	海事及水務局-澳門海上航班
+</title><meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta content="width=device-width, initial-scale=1.0" name="viewport" /><meta content="Seaway Scheduled" name="description" /><meta content="Dilly Ho" name="author" /><link rel="shortcut icon" type="image/x-icon" href="favicon.ico" /><link type="text/css" href="Styles/css/bootstrap.min.css" rel="stylesheet" /><link type="text/css" href="Styles/css/docs.min.css" rel="stylesheet" /><link type="text/css" href="Styles/css/bootstrap-datepicker3.min.css" rel="stylesheet" /><link type="text/css" href="Styles/css/jquery.scrollbar.min.css" rel="stylesheet" /><link type="text/css" href="Styles/css/main.css" rel="stylesheet" />
+
+    <script type="text/javascript" src="../SeawayScheduled/Scripts/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../SeawayScheduled/Scripts/jquery.query-object.min.js"></script>
+    <script type="text/javascript" src="../SeawayScheduled/Scripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../SeawayScheduled/Scripts/bootstrap-datepicker.min.js"></script>
+    <script type="text/javascript" src="../SeawayScheduled/Scripts/jquery.blockUI.min.js"></script>
+    <script type="text/javascript" src="../SeawayScheduled/Scripts/jquery.history.min.js"></script>
+    <script type="text/javascript" src="../SeawayScheduled/Scripts/jquery.scrollbar.min.js"></script>
+    <script type="text/javascript" src="../SeawayScheduled/Scripts/jquery.seaway.js"></script>
+    <!--[if lt IE 9]>
+        <script type="text/javascript" src="/SeawayScheduled/Scripts/html5shiv.min.js"></script>
+        <script type="text/javascript" src="/SeawayScheduled/Scripts/respond.min.js"></script>
+    <![endif]-->  
+</head>
+<body>
+    <form method="post" action="RealTimeSailing.aspx%3Ftype=dataDepartureXML&amp;local=PE.html" id="_form">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTE0NTUxMTIyMjEPZBYCZg9kFgICAw9kFgYCAw8PFgIeCEltYWdlVXJsBS0vU2Vhd2F5U2NoZWR1bGVkL1N0eWxlcy9pbWFnZXMvaGVhZGVyX0NITi5qcGdkZAINDxYCHgdWaXNpYmxlaGQCLw8PFgIeBFRleHRlZGRkMSNpmtm09ZPAmhHm44fGdIJ1ZbfvwnBrPxEhqqT+YG4=" />
+
+
+<script src="../SeawayScheduled/ScriptResource.axd%3Fd=bIYG4Yjx7tX2S952P1jjJjLiD-REvgCdruS1TQfSrvE9X13xBX4ASHsXRZvz6AV0sgOs8_PoOrXmRujrDBS2yJBuqAFDy-vKMcpqKR97gqW0PxfLWxOOTTuyG6CmXoGHyFgfGxHeZYzEcnx7FidwFntCVfXwbaZQX74t4WYpKD81&amp;t=ffffffff940d030f" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+var PageMethods = function() {
+PageMethods.initializeBase(this);
+this._timeout = 0;
+this._userContext = null;
+this._succeeded = null;
+this._failed = null;
+}
+PageMethods.prototype = {
+_get_path:function() {
+ var p = this.get_path();
+ if (p) return p;
+ else return PageMethods._staticInstance.get_path();},
+GetWeather:function(succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'GetWeather',false,{},succeededCallback,failedCallback,userContext); },
+GetData:function(local,type,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'GetData',false,{local:local,type:type},succeededCallback,failedCallback,userContext); }}
+PageMethods.registerClass('PageMethods',Sys.Net.WebServiceProxy);
+PageMethods._staticInstance = new PageMethods();
+PageMethods.set_path = function(value) { PageMethods._staticInstance.set_path(value); }
+PageMethods.get_path = function() { return PageMethods._staticInstance.get_path(); }
+PageMethods.set_timeout = function(value) { PageMethods._staticInstance.set_timeout(value); }
+PageMethods.get_timeout = function() { return PageMethods._staticInstance.get_timeout(); }
+PageMethods.set_defaultUserContext = function(value) { PageMethods._staticInstance.set_defaultUserContext(value); }
+PageMethods.get_defaultUserContext = function() { return PageMethods._staticInstance.get_defaultUserContext(); }
+PageMethods.set_defaultSucceededCallback = function(value) { PageMethods._staticInstance.set_defaultSucceededCallback(value); }
+PageMethods.get_defaultSucceededCallback = function() { return PageMethods._staticInstance.get_defaultSucceededCallback(); }
+PageMethods.set_defaultFailedCallback = function(value) { PageMethods._staticInstance.set_defaultFailedCallback(value); }
+PageMethods.get_defaultFailedCallback = function() { return PageMethods._staticInstance.get_defaultFailedCallback(); }
+PageMethods.set_enableJsonp = function(value) { PageMethods._staticInstance.set_enableJsonp(value); }
+PageMethods.get_enableJsonp = function() { return PageMethods._staticInstance.get_enableJsonp(); }
+PageMethods.set_jsonpCallbackParameter = function(value) { PageMethods._staticInstance.set_jsonpCallbackParameter(value); }
+PageMethods.get_jsonpCallbackParameter = function() { return PageMethods._staticInstance.get_jsonpCallbackParameter(); }
+PageMethods.set_path("RealTimeSailing.aspx");
+PageMethods.GetWeather= function(onSuccess,onFailed,userContext) {PageMethods._staticInstance.GetWeather(onSuccess,onFailed,userContext); }
+PageMethods.GetData= function(local,type,onSuccess,onFailed,userContext) {PageMethods._staticInstance.GetData(local,type,onSuccess,onFailed,userContext); }
+//]]>
+</script>
+
+        
+
+        <div class="header">
+            <a href="http://www.marine.gov.mo">
+                <img id="headerImg" src="../SeawayScheduled/Styles/images/header_CHN.jpg" />
+            </a>
+
+            <div id="id_weather"></div>
+
+            <div id="id_lang">
+                <span class="active" data-value="CHN">繁</span> |
+                <span data-value="SC">简</span> |
+                <span data-value="PRT">Português</span> |
+                <span data-value="ENG">English</span>
+            </div>
+        </div>
+
+        <div class="navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="RealTimeSailing.aspx%3Ftype=dataDepartureXML&amp;local=PE.html#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <span>實時航班</span><span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="RealTimeSailing.aspx%3Ftype=dataArrivalXML&amp;local=PE.html">往澳航班</a></li>
+                            <li><a href="RealTimeSailing.aspx%3Ftype=dataDepartureXML&amp;local=PE.html">離澳航班</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="DataSchedule.aspx.html">航班表查詢</a></li>
+
+                    
+
+                    <li class="dropdown">
+                        <a href="RealTimeSailing.aspx%3Ftype=dataDepartureXML&amp;local=PE.html#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <span>海上交通實況</span><span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="RealTimeTraffic.aspx%3Ffolder=PE-01.html">外港碼頭港池 (東)</a></li>
+                            <li><a href="RealTimeTraffic.aspx%3Ffolder=PE-02.html">外港碼頭港池 (南)</a></li>
+                            <li><a href="RealTimeTraffic.aspx%3Ffolder=PI-01.html">內港航道 (北)</a></li>
+                            <li><a href="RealTimeTraffic.aspx%3Ffolder=PI-02.html">內港航道 (南)</a></li>
+                            <li><a href="RealTimeTraffic.aspx%3Ffolder=TP-01.html">氹仔碼頭港池</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="RealTimeSailing.aspx%3Ftype=dataDepartureXML&amp;local=PE.html#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <span>碼頭商店及服務</span><span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="ShopService.aspx%3Flocal=PE.html">澳門外港</a></li>
+                            <li><a href="ShopService.aspx%3Flocal=PI.html">澳門內港</a></li>
+                            <li><a href="ShopService.aspx%3Flocal=TP.html">澳門氹仔</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="RealTimeSailing.aspx%3Ftype=dataDepartureXML&amp;local=PE.html#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <span>潮汐圖</span><span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="Tide/PredictedActual.aspx.html">預測及實際潮高</a></li>
+                            <li><a href="Tide/TideSearch.aspx.html">查詢預測潮高</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="RealTimeSailing.aspx%3Ftype=dataDepartureXML&amp;local=PE.html#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <span>了解更多</span><span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="About/Introduce.aspx.html">『澳門海上航班』</a></li>
+                            <li><a href="About/Disclaimer.aspx.html">免責聲明</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="content">
+            <marquee behavior="scroll" direction="left" scrolldelay="160">
+                <span id="noticeField"></span>
+            </marquee>
+
+            <div id="id_group">
+                <div class="left-group list-group">
+                    <label>
+                        <span class="glyphicon glyphicon-pushpin"></span>
+                        
+                    </label>
+                    
+                </div>
+
+                <div class="right-group">
+                    
+    <div class="choose-list">
+        <div id="id_arrival">
+            <ul class="list-inline" data-value="dataArrivalXML">
+                <li>
+                    <span class="label label-bar">
+                        <span>實時航班 - <label>往澳航班</label> :</span>
+                    </span>
+                </li>
+                <li><b class="active" data-value="PE">澳門外港</b></li>
+                <li><b data-value="TP">澳門氹仔</b></li>
+                <li><b data-value="PI">澳門內港</b></li>
+            </ul>
+            <div id="arrLocation" class="choose-location"></div>
+        </div>
+
+        <div id="id_departure">
+            <ul class="list-inline" data-value="dataDepartureXML">
+                <li>
+                    <span class="label label-bar">
+                        <span>實時航班 - <label>離澳航班</label> :</span>
+                    </span>
+                </li>
+                <li><b class="active" data-value="PE">澳門外港</b></li>
+                <li><b data-value="TP">澳門氹仔</b></li>
+                <li><b data-value="PI">澳門內港</b></li>
+            </ul>
+            <div id="detLocation" class="choose-location"></div>
+        </div>
+    </div>
+
+    <div id="id_table">
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th class="table-border-radius-l col-md-1">航 班</th>
+                    <th class="col-md-1">啟航港</th>
+                    <th class="col-md-2">狀 態</th>
+                    <th class="col-md-1 t-berthNo">閘 口</th>
+                    <th class="col-md-2">船 名 ( 船種 )</th>
+                    <th class="table-border-radius-r col-md-1">船務公司</th>
+                </tr>
+            </thead>
+        </table>
+
+        <div id="id_tbContent" class="tb-content scrollbar-inner">
+            <table class="table table-bordered table-striped">
+                <tbody></tbody>
+            </table>
+        </div>
+
+        <table class="table table-bordered table-striped">
+            <tfoot>
+                <tr>
+                    <td class="text-center">
+                        <span id="id_info" class="label label-info">尚有航班，稍後更新</span>
+                        <span id="id_empty" class="label label-info">沒有任何記錄 !</span>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+    <p id="id_notice"></p>
+
+    <script type="text/javascript">
+        $(function () {
+            var title = $(document).find("title").text();
+            var type = $.query.get('type');
+            var local = $.query.get('local');
+            var arrivalFlag = (type == 'dataArrivalXML' || type == '');
+
+            $('.left-group').toggle(false);
+            $('#id_arrival').toggle(arrivalFlag);
+            $('#id_departure').toggle(!arrivalFlag);
+            $('.t-berthNo').toggle(!arrivalFlag);
+            $('.list-inline:visible li b:eq(0)').addClass('active arrow');
+            $('#id_info').toggle(false);
+            $('#id_empty').toggle(false);
+
+            local = (local == '') ? 'PE' : local;
+            type = (type == '') ? 'dataArrivalXML' : type;
+
+            if (local != '') {
+                $('.list-inline li b').each(function () {
+                    var _type = $(this).closest('ul').attr('data-value');
+
+                    if (local == $(this).attr('data-value') && type == _type) {
+                        $('.list-inline li b').removeClass('active arrow');
+                        $(this).addClass('active arrow');
+                        return;
+                    }
+                });
+            }
+
+            $.fn.blockUI();
+            PageMethods.GetData(local, type, OnResult);
+
+            $("body").on("click", ".choose-list li b", function (e) {
+                $('.choose-list li b').removeClass('active arrow');
+                $(this).addClass('active arrow');
+
+                var type = $(this).closest('ul').attr('data-value');
+                var local = $(this).attr("data-value");
+
+                var $url = "RealTimeSailing.aspx" + $.query.set("type", type).set("local", local).remove("port");
+                History.pushState(null, title, $url);
+
+                $.fn.blockUI();
+                PageMethods.GetData(local, type, OnResult);
+            });
+
+            $("body").on("click", "[id*=Location] b", function (e) {
+                $('[id*=Location] b').removeClass('active');
+                $(this).addClass('active');
+                $('#id_tbContent tbody tr').toggle(true);
+
+                var port = $(this).html();
+                var portVal = $(this).attr('data-value');
+                var local = $('.choose-list li b.active').attr('data-value');
+
+                TbFilter(port, portVal);
+                TbContentSetter();
+
+                var $url = "RealTimeSailing.aspx" + $.query.set("type", type).set("local", local).set("port", port);
+                History.pushState(null, title, $url);
+            });
+
+            function OnResult(data) {
+                $.unblockUI();
+                $('#id_tbContent tbody').empty();
+
+                var stopSailFlag = data[0] == 1;
+                $('#id_table').toggle(!stopSailFlag);
+                $('#id_notice').toggle(stopSailFlag);
+
+                if (stopSailFlag) {
+                    $('#id_notice').html(data[2]);
+                }
+                else {
+                    $('.choose-location').html(data[1]);
+                    $('#id_tbContent tbody').html(data[2]);
+                }
+
+                var existRecords = $('#id_tbContent tr').length > 0;
+
+                if (!existRecords) {
+                    $('.list-inline li b.active').removeClass('arrow');
+                }
+                else {
+                    var port = $.query.get('port');
+                    if (port != '') {
+                        $('.choose-location b').each(function () {
+                            var _type = $(this).closest('div').prev('ul').attr('data-value');
+
+                            if (port == $(this).html() && type == _type) {
+                                $('.choose-location b').removeClass('active');
+                                $(this).addClass('active');
+
+                                var portVal = $(this).attr('data-value');
+                                TbFilter(port, portVal);
+                                return;
+                            }
+                        });
+                    }
+
+                    TbContentSetter();
+                }
+
+                $('.t-berthNo').toggle(!arrivalFlag);
+                $('.choose-location').toggle(existRecords);
+                $('#id_info').toggle(existRecords);
+                $('#id_empty').toggle(!existRecords);
+            }
+
+            function TbContentSetter() {
+                $('.right-group').css('padding-left', '8px');
+                $('.scrollbar-inner').scrollbar();
+
+                var d = new Date();
+                var h = d.getHours();
+                $('#id_tbContent table tr td:first-child:visible').each(function () {
+                    var $proposedHour = parseInt($(this).html().substring(0, 2));
+                    if ($proposedHour >= h) {
+                        $('#id_tbContent').scrollTop(0);
+
+                        var rowpos = $(this).closest('tr').position();
+                        $('#id_tbContent').scrollTop(rowpos.top);
+
+                        return false;
+                    }
+                });
+            }
+
+            function TbFilter(port, portVal) {
+                if (portVal != '0') {
+                    $('#id_tbContent tbody tr').filter(function () {
+                        var $port = $(this).find('td:eq(1)').html();
+                        return port != $port;
+                    }).toggle(false);
+                }
+            }
+        });
+    </script>
+
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <script type="text/javascript">
+        $(function () {
+            PageMethods.GetWeather(OnWeatherResult);
+
+            function OnWeatherResult(data) {
+                $('#id_weather').html(data);
+            }
+        });
+    </script>
+</body>
+</html>
